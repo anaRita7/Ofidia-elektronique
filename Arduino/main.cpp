@@ -88,11 +88,11 @@ void atualizaVidas(){
 }
 
 void lerTeclas(){
-  e = !digitalRead(E);
-  d = !digitalRead(D);
   ativa = !digitalRead(START);
   if (ativa)
     start = 1;
+  e = !digitalRead(E);
+  d = !digitalRead(D);
   // Nao limpa a tecla de start
   // TODO hardware
 }
